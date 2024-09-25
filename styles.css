@@ -1,0 +1,88 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+
+
+/* Estructura de la página para que el footer se mantenga en la parte inferior */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido principal debe crecer para llenar el espacio disponible */
+main {
+    flex: 1;
+}
+
+/* Footer pegado al fondo */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Para pantallas pequeñas y ajustes adicionales */
+@media (max-width: 768px) {
+    footer .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    footer .col-md-4 {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+
+
+.hero {
+    background-image: url('Imagenes/background-home.jpg');
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+}
